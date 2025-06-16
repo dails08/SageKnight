@@ -1,0 +1,41 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "SageKnight server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dails08/SageKnight.git"
+  },
+  "author": "Chris Dailey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dails08/SageKnight/issues"
+  },
+  "homepage": "https://github.com/dails08/SageKnight#readme",
+  "devDependencies": {
+    "@types/connect-mongo": "^3.1.2",
+    "@types/cors": "^2.8.19",
+    "@types/express-session": "^1.18.2",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^24.0.1"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-csp-header": "^6.1.0",
+    "express-oauth2-jwt-bearer": "^1.6.1",
+    "express-openid-connect": "^2.18.1",
+    "express-session": "^1.18.1",
+    "js-sha256": "^0.11.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.2"
+  }
+}
