@@ -92,7 +92,6 @@ async function startServer(){
     const openidConfig: ConfigParams = {
     authRequired: true,
     auth0Logout: true,
-    // baseURL: "https://rome.dails.net",
       baseURL: "http://localhost:3000",
     clientID: process.env.AUTH0_CLIENT_ID,
     issuerBaseURL: "https://dev-vvtgwjm3mq5pr748.us.auth0.com",
@@ -135,13 +134,6 @@ async function startServer(){
             return res.redirect("/logout");
         } else {
             console.log("Destroyed.");
-            // return res.oidc.logout();
-            // fetch('https://dev-vvtgwjm3mq5pr748.us.auth0.com/oidc/logout?id_token_hint=' + auth0_id_token + '&post_logout_redirect_uri=https://rome.dails.net/login', {
-            //   headers: {
-            //     'content-type': 'application/x-www-form-urlencoded'
-            //   }
-            // });
-            //return res.redirect('https://dev-vvtgwjm3mq5pr748.us.auth0.com/oidc/logout?id_token_hint=' + auth0_id_token + '&post_logout_redirect_uri=https://rome.dails.net/login');
             return res.status(200).json(auth0_id_token);
         }
     });

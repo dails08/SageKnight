@@ -4,6 +4,8 @@
   "description": "SageKnight server",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node --enable-source-maps ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +24,8 @@
     "@types/express-session": "^1.18.2",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/mongoose": "^5.11.96",
-    "@types/node": "^24.0.1"
+    "@types/node": "^24.0.1",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "@types/express": "^5.0.3",
